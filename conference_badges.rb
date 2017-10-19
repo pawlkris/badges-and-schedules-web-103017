@@ -12,12 +12,6 @@ def assign_rooms(names)
 end
 
 def printer(names)
-  badges = batch_badge_creator(names)
-  rooms = assign_rooms(names)
-  counter = 0
-  until counter == 6
-    puts(badges[counter])
-    puts(rooms[counter])
-    counter +=1
-  end
+  batch_badge_creator(names).each {|x| puts(x)}
+  assign_rooms(names).each {|x| puts(x)}
 end
