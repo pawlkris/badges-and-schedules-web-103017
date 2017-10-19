@@ -9,8 +9,10 @@ end
 
 def assign_rooms(names)
   assignments = []
-  for x in 0..6 {assignments[x]<< "Hello, #{names[0]}! You'll be assigned to room #{x+1}!"
-    return assignments
+  for x in 0..6 do 
+    assignments[x] << "Hello, #{names[0]}! You'll be assigned to room #{x+1}!"
+  end
+  return assignments
 end
 
 def printer
