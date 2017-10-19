@@ -9,7 +9,7 @@ end
 
 def assign_rooms(names)
   assignments = []
-  assignments = names.each_with_index { |x,i| "Hello, #{x}! You'll be assigned to room #{i}!"}
+  assignments = names.each_with_index! { |x,i| "Hello, #{x}! You'll be assigned to room #{i}!"}
   return assignments
 end
 
