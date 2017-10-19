@@ -18,6 +18,6 @@ def printer(names)
   until counter == 6
     puts(badges[counter])
     puts(rooms[counter])
-    couter +=1
+    counter +=1
   end
 end
