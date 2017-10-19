@@ -9,8 +9,11 @@ end
 
 def assign_rooms(names)
   assignments = []
-  assignments = names.each_with_index! { |x,i| "Hello, #{x}! You'll be assigned to room #{i}!"}
-  return assignments
+  i = 0
+  while i < names.size-1
+    assignments << "Hello, #{names[i]}! You'll be assigned to room #{i+1}!"
+    i += 1
+  end
 end
 
 def printer
